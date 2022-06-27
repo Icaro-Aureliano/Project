@@ -1,0 +1,46 @@
+#content_age{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: #c4c4c4;
+
+    width:31vw;
+    height: 30vw;
+
+    border-radius: 10px;
+}
+#form_age{
+    text-align: center;
+    margin: 10% 0 10%;
+}
+#txtage{
+    font-size: 8vw;
+    font-weight: 100;
+}
+#labeltxtage{
+    font-size:medium;
+    font-family: 'Roboto', sans-serif;
+
+}
+#butenter_age{
+    cursor: pointer;
+
+    font-size: large;
+
+    margin-top: 15px;
+
+    padding:5vh;
+    background: #4bb543;
+    width: 85%;
+
+    border-radius:10px;
+    border: None;
+
+    color: white;
+}

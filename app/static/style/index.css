@@ -1,0 +1,68 @@
+#contain_index{
+    margin:5vh 1.5vw 0  1.5vw ;
+}
+
+#hi_index{
+    margin:0 1.5vw 0 1.5vw;
+    font-size: 7vh;
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 700;
+}
+#scroll_index{
+    margin: 5vh 0 5vh; 
+
+    overflow: auto;
+    white-space: nowrap;    
+
+}
+#rocket_index{
+    margin:  0 1.5vw 0 1.5vw;
+
+    display: inline-block;
+    background: white;
+    font-size: 3vh;
+
+    width: 30%;
+
+    border-radius: 10px;
+    overflow: hidden;
+    
+    border: #c4c4c4 1px solid;
+
+}
+#imgrocket_index{
+    width:100%;
+    height: 45vh;
+
+    object-fit: cover;
+}
+#rocketcontent_index{
+    margin: 0 2vw;
+    font-family: 'Roboto', sans-serif;
+
+    line-height: 5vh;
+    
+}
+
+#play_index{
+    cursor: pointer;
+
+    font-size: large;
+
+    margin: 5vh 0 5vh;
+
+    padding:3vh;
+    background: #4bb543;
+    width: 100%;
+
+    border-radius:10px;
+    border: None;
+
+    color: white;
+}
+#namerocket_index,#namequest_index{
+    display: block;
+    text-align: left;
+    font-weight: 800;
+}

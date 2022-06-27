@@ -1,0 +1,25 @@
+{% extends 'default.html'%}
+{% block content %}
+
+<div id="contain_index">
+    <p name="hi" id="hi_index" >Olá {{name}}, Selecione o lançamento </p>
+
+    <div id="scroll_index">
+        {% for rocket in rockets %}
+            <div id="rocket_index">
+                <form id="formR" action="{{url_for('rocket')}}" method="POST">
+                    <img id="imgrocket_index" src="{{url_for('static', filename = rocket.image or default_rocket.png)}}" >
+                        <div id="rocketcontent_index">
+                            <input name="namerock" type="hidden" value="{{rocket.name}}">
+                            <p id="namerocket_index">{{rocket.name}}</p>
+                            <p id="namequest_index">{{rocket.quest}}</p>
+                            <input id = "play_index" type="submit" value="LANÇAR FOGUETE">
+                        </div>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,102 @@
+#contain_quote{
+    margin:5vh 1.5vw 0  1.5vw ;
+}
+
+#hi_quote{
+    margin:0 1.5vw 0 1.5vw;
+    font-size: 7vh;
+    font-family: 'Roboto', sans-serif;
+
+    font-weight: 700;
+}
+#scroll_quote{
+    margin: 5vh 0 5vh; 
+
+    overflow: auto;
+    white-space: nowrap;    
+
+}
+#rocket_quote{
+    margin:  0 1.5vw 0 1.5vw;
+
+    display: inline-block;
+    background: white;
+    font-size: 3vh;
+
+    width: 30%;
+
+    border-radius: 10px;
+    overflow: hidden;
+    
+    border: #c4c4c4 1px solid;
+
+}
+#img_quote{
+    width:100%;
+    height: 45vh;
+
+    object-fit: cover;
+}
+#quotecontent{
+    margin: 0 2vw;
+    font-family: 'Roboto', sans-serif;
+
+    line-height: 5vh;
+    
+}
+
+#ok_quote{
+    cursor: pointer;
+
+    font-size: large;
+
+    margin: 5vh 0 5vh;
+
+    padding:3vh;
+    background: #4bb543;
+    width: 100%;
+
+    border-radius:10px;
+    border: None;
+
+    color: white;
+}
+#not_quote{
+    cursor: pointer;
+
+    font-size: large;
+
+    margin: 5vh 0 5vh;
+
+    padding:3vh;
+    background: rgb(255, 88, 88);
+    width: 100%;
+
+    border-radius:10px;
+    border: None;
+
+    color: white;
+}
+#namerocket_quote,#namequest_quote{
+    display: block;
+    text-align: left;
+    font-weight: 800;
+}
+#return{
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
+
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+
+    font-size: large;
+    color:black;
+
+    font-weight: 600;
+
+    font-family: 'Roboto', sans-serif;
+    font-style:unset;
+}

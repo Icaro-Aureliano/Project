@@ -1,0 +1,38 @@
+{% extends 'default.html'%}
+{% block content %}
+
+
+<div id="contain_quote">
+    <p name="hi" id="hi_quote" >{{name}}, Veja seus lançamentos </p>
+
+    <div id="scroll_quote">
+        {% for quote in quotes %}
+            <div id="rocket_quote">
+                <form id="form_quote" action="{{url_for('rocket', update = True)}}" method="POST">
+                    <img id="img_quote" src="{{url_for('static', filename = quote.image or 'assets/default.png')}}" >
+                        <div id="quotecontent">
+                            <input name="namerock" type="hidden" value="{{quote['rocket'].name}}">
+                            <p id="namequote">{{quote['rocket'].name}}</p>
+                            <p id="namequote">{{quote['rocket'].quest}}</p>
+                            <p id="namequote">{{quote['porcentgain']}}</p>
+                            <p id="namequote">Data de lançamento {{quote['date']}}</p>
+                            {% if quote["launch"] %}
+                                <input id = "ok_quote" type="submit" value="LANÇADO" >
+                            {%else %}
+                                <input id = "not_quote" type="submit" value="NÂO LANÇADO">
+
+                            {% endif %}
+                        </div>
+                </form>
+            </div>
+        {% endfor %}
+    </div>
+    <a id="return" href="{{url_for('index')}}">Voltar para Home</a>
+</div>
+
+
+    {% for quote in quotes %}
+        <p>{{quote}}</p>
+    {%endfor%}
+
+{% endblock %}

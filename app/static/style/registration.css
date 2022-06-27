@@ -1,0 +1,57 @@
+#content_regis{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background: #c4c4c4;
+
+    width:31vw;
+    height: 30vw;
+
+    border-radius: 10px;
+}
+#form_regis{
+    margin: 10% 0 10%;
+}
+#content,#form_regis{
+    text-align: center;
+}
+#txtbox_regis{
+    margin-top: 15px;
+
+    font-size: large;
+
+    width: 80%;
+    height: 10vh;
+    padding:10px;
+    display: inline-flex;
+
+    border-radius: 10px;
+
+    border:#c4c4c4 2px solid;
+    outline: 0;
+}
+#txtbox_regis:focus{
+    border:green 1px solid;
+}
+#butenter_regis{
+    cursor: pointer;
+
+    font-size: large;
+
+    margin-top: 15px;
+
+    padding:5vh;
+    background: #4bb543;
+    width: 85%;
+
+    border-radius:10px;
+    border: None;
+
+    color: white;
+}

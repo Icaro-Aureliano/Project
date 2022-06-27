@@ -1,0 +1,13 @@
+{% extends "default.html" %}
+{% block content %}
+
+    <div id="content_login">
+        <form id="form_login" method="POST" action="{{url_for('checkuser')}}">
+            <input id="txtbox_login" name="nameuser" type="text" placeholder="Seu Nome"><br>
+            <input id="butenter_login"name="enter" type="submit" value="ENTRAR">
+        </form> 
+        <a id="regis" href="{{url_for('regis')}}">Cadastre-se Aqui</a>
+    </div>
+
+
+{% endblock %}

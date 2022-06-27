@@ -1,0 +1,14 @@
+{% extends "default.html" %}
+{% block content %}
+
+<div id="content_age">
+    <form id="form_age" action="{{url_for('index')}}">
+            <input type="hidden" value="{{name}}">
+            <label for="txtage" id="labeltxtage" >Sua idade é:</label>
+            <p name="txtage" id="txtage" >{{age}}</p>
+            <input type="submit" id="butenter_age" name ="enter" value="CADASTRAR">
+        </form>
+        <a href="{{url_for('logout')}}">Cancelar</a>
+    </div>
+
+{% endblock %}

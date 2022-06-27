@@ -1,0 +1,13 @@
+{% extends "default.html" %}
+{% block content %}
+
+    <div id="content_regis">
+        <form id="form_regis" action="{{url_for('update')}}" method="POST">
+            <input type="text" name="nameuser" id="txtbox_regis" placeholder="Seu Nome">
+            <input type="text" name="age" id="txtbox_regis" placeholder="Sua Idade">
+            <input type="submit" id="butenter_regis" >
+        </form>
+
+    </div>
+
+{% endblock %}

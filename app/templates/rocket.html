@@ -1,0 +1,41 @@
+{% extends 'default.html' %}
+{% block content %}
+
+    <div id="legend">
+        <p id="hi_rocket">{{name_user}}, selecione Lucro e Data de Lançamento</p>
+    </div>
+    <div id="contains">
+        <div id="contain_rocket">
+            <img id="img_rocket" src="{{url_for('static', filename = image)}}">
+            <div id="rocket_content">
+                <p id="txt_rocket" name="name_rocket">Nome: {{rocket.name}}</p>
+                <p id="txt_rocket" name="quest">Missão: {{rocket.quest}}</p>
+                <p id="txt_rocket" name="value">Preço: ${{rocket.value}}</p>
+                {% if rocket.active %}
+                    <p id="txt_rocket" >Foguete ativo</p>
+                   
+                {% else %}
+                    <p id="txt_rocket" >Foguete não ativo</p>
+                {% endif %}
+                
+            </div>
+        </div>
+
+        <div id="contain_form">
+
+                <form id="form_rocket" action="{{url_for(proxima)}}" method="POST">
+
+                <input type="hidden" name="namerock" value="{{rocket.name}}">
+                <input name="value" type="hidden" value="{{rocket.name}}">
+                <input id="txtbox_rocket" type="text" name="gain" placeholder="Inform o % de Lucro Desejado">
+                <input id="txtbox_rocket" type="date" name="date" placeholder="Selecione a Data de Lançamento">
+                <input type="submit" id="button_form_rocket" value="REALIZAR LANÇAMENTO">
+                
+                <a href="{{url_for(volta)}}">Voltar</a>
+            </form>
+        </div>
+
+    </div>
+
+
+{% endblock %}
